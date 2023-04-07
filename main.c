@@ -18,7 +18,7 @@ typedef struct {
     char    profile_image[2*LL];
 } Account;
 
-void readFromAccountFile(Account* account, int* num_account) {
+void readFromAccountFile(Account* account, int* num_account) {      
     FILE* fIn = fopen("tmp.txt", "r");
     int i = 0; 
     rewind(fIn);
@@ -67,30 +67,6 @@ void writeToAccountFile(const Account* account, int num_account) {
     fclose(fOut);
 }
 
-
-void ouputToScreen(const Account* account, int num_account) {
-    for(int t=0; t <= 200; t++) {
-       printf("-");
-    }
-    printf("\n| %-10s| %-20s| %-20s| %-20s| %-10s| %-20s| %-10s| %-20s| %-20s\n",
-        "ID", "Username", "Password",
-        "Full Name", "Gender", "DOB", 
-        "Position", "Phone Number", "Profile Image (Source)");
-    for(int t = 0; t <= 200; t++) {
-       printf("-");
-    }
-    for (int i = 0; i < num_account; i++) {
-        printf("\n| %-10s| %-20s| %-20s| %-20s| %-10s| %-20s| %-10s| %-20s| %-20s",
-            account[i].id, account[i].username, account[i].password,
-            account[i].name, account[i].gender, account[i].dob,
-            account[i].position, account[i].phone_number, account[i].profile_image);
-    }
-    printf("\n");
-    for(int t=0; t <= 200; t++) {
-       printf("-");
-    }
-}
-
 void dataCleaning() {
     fflush(stdin);
     char    data[MAX_USER+3][MAX_USER*2+2],
@@ -129,6 +105,29 @@ void dataCleaning() {
         fprintf(fOut, "%s", tmp[m]);
     }
     fclose(fOut);
+}
+
+void ouputToScreen(const Account* account, int num_account) {
+    for(int t=0; t <= 200; t++) {
+       printf("-");
+    }
+    printf("\n| %-10s| %-20s| %-20s| %-20s| %-10s| %-20s| %-10s| %-20s| %-20s\n",
+        "ID", "Username", "Password",
+        "Full Name", "Gender", "DOB", 
+        "Position", "Phone Number", "Profile Image (Source)");
+    for(int t = 0; t <= 200; t++) {
+       printf("-");
+    }
+    for (int i = 0; i < num_account; i++) {
+        printf("\n| %-10s| %-20s| %-20s| %-20s| %-10s| %-20s| %-10s| %-20s| %-20s",
+            account[i].id, account[i].username, account[i].password,
+            account[i].name, account[i].gender, account[i].dob,
+            account[i].position, account[i].phone_number, account[i].profile_image);
+    }
+    printf("\n");
+    for(int t=0; t <= 200; t++) {
+       printf("-");
+    }
 }
 
 void checkLogin(Account* account, int num_account, int* roleCheck, int* foundIndex) {
