@@ -18,7 +18,7 @@ typedef struct {
     char    profile_image[2*LL];
 } Account;
 
-void readFromAccountFile(Account* account, int* num_account) {      
+void storeFromAccountFile(Account* account, int* num_account) {      
     FILE* fIn = fopen("tmp.txt", "r");
     int i = 0; 
     rewind(fIn);
@@ -65,6 +65,7 @@ void writeToAccountFile(const Account* account, int num_account) {
        fprintf(fOut, "-");
     }
     fclose(fOut);
+    dataCleaning();
 }
 
 void dataCleaning() {
@@ -100,7 +101,7 @@ void dataCleaning() {
     
     // Ghi dữ liệu sạch vô file phụ để đọc
     FILE* fOut = fopen("tmp.txt", "w+");
-    for (int m=1; m<i; m++) {
+    for (int m = 1; m<i; m++) {
         fprintf(fOut, "%s", tmp[m]);
     }
     fclose(fOut);
@@ -163,20 +164,20 @@ void checkLogin(Account* account, int num_account, int* roleCheck, int* foundInd
 void updateInforAccount(Account *account, int num_account) {
     char    updateID[LL],
             newPassword[LL],
-            newPhoneNumber[LL];
-    int     findIndex = 0;
+            newPhoneNumber[LL/2];
+    int     findIndex = -1;
     UI:
     do {
         printf("What ID do you want to update information? ");
         scanf("%s", &updateID);
-        for (int i = 1; i <=num_account; i++) {
+        for (int i = 0; i < num_account; i++) {
             if (strcmp(account[i].id, updateID) == 0) {
                 findIndex = i;
                 printf("ID Found! ");
                 break;
             }
         }
-    } while (findIndex == 0);
+    } while (findIndex == -1);
     fflush(stdin);
     printf("What do you want to update?\n");
     printf("1. Update Password\n");
@@ -191,17 +192,17 @@ void updateInforAccount(Account *account, int num_account) {
                 scanf("%s", &newPassword);
                 if (strcmp(account[findIndex].password, newPassword) != 0) {
                     strcpy(account[findIndex].password, newPassword);
-                    main();
+                    storeData(account, num_account);
                 } else {
                     printf("New password must be different from the old one!\n");
                 }
             break;
         case 2:
-                printf("Update Phone Numberl");
+                printf("Update Phone Number: ");
                 scanf("%s", &newPhoneNumber);
                 if (strcmp(account[findIndex].phone_number, newPhoneNumber) != 0) {
                     strcpy(account[findIndex].phone_number, newPhoneNumber);
-                    main();
+                    storeData(account, num_account);
                 } else {
                     printf("New password must be different from the old one!\n");
                 }
@@ -231,6 +232,12 @@ void homepageMenu(Account *account, int num_account) {
     }
 }
 
+void storeData(Account *account, int num_account) {
+    writeToAccountFile(account, num_account);
+    dataCleaning();
+    storeFromAccountFile(account, &num_account);
+    main();
+}
 int main() {
     Account account[MAX_USER];
     int     num_account = 0,    //số lượng account
@@ -240,7 +247,7 @@ int main() {
     system("cls");
     
     dataCleaning();
-    readFromAccountFile(account, &num_account);
+    storeFromAccountFile(account, &num_account);
     // writeToAccountFile(account, num_account);
     ouputToScreen(account, num_account);
 
