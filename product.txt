@@ -1,0 +1,43 @@
+---------------------------------------------------------------------------------------------
+| ID         | Type   | Name                   | Amount     | Price   | Product Image 
+---------------------------------------------------------------------------------------------
+| KOR0001    | Food   | Kimbap                 | 50         | 25000   | https://bom.so/4nsa3M
+| KOR0002    | Food   | Tokbokki               | 35         | 25000   | https://bom.so/gRgrMk
+| PIZ0001    | Food   | Pizza Seafood          | 150        | 37000   | https://bom.so/ibWk4q
+| SAL0001    | Food   | Salad                  | 75         | 25000   | https://bom.so/ZHgkss
+| SAW0001    | Food   | Sandwich Jambon        | 50         | 25000   | https://bom.so/1HpRSf
+| SAW0002    | Food   | Sandwich Eggs          | 50         | 25000   | https://bom.so/WLh70d
+| SNA0001    | Food   | Snack Doritos Cheese   | 200        | 19000   | https://bom.so/MaqWpM
+| SNA0002    | Food   | Dew-wetted Rice Paper  | 40         | 25000   | https://bom.so/gemFeQ
+| ICR0001    | Food   | Bing Chilling Choco    | 100        | 15000   | https://bom.so/MUpZ6C
+| ANI0001    | Food   | Memorization Bread     | 30         | 1000    | https://bom.so/X0aIg0
+| ANI0002    | Food   | Ramen Noodle Naruto    | 35         | 45000   | https://bom.so/PsyCwZ
+| FAS0001    | Food   | Combo Skewer           | 25         | 50000   | https://bom.so/poRhP0
+| FAS0002    | Food   | Noodles Mixed Eggs     | 60         | 18000   | https://bom.so/7dQxy0
+| FAS0003    | Food   | Noodles Mixed Sausage  | 60         | 25000   | https://bom.so/N6ssir
+| FAS0004    | Food   | BBQ Bao                | 50         | 22000   | https://bom.so/gl5VLp
+| FAS0005    | Food   | Meat Bao               | 50         | 18000   | https://bom.so/QQPU8a
+| FAS0006    | Food   | Banh Gio               | 55         | 13000   | https://bom.so/yvFq2F
+| FAS0007    | Food   | Beef Bread             | 30         | 36000   | https://bom.so/MROCjh
+| FAS0008    | Food   | Meatball Bread         | 35         | 25000   | https://bom.so/EoDUQh
+| FAS0009    | Food   | Chicken Bread          | 30         | 30000   | https://bom.so/er84Mh
+| MIN0001    | Drink  | Lavie Mineral Water    | 200        | 6000    | https://bom.so/i3ftNJ
+| CAN0001    | Drink  | Coca Cola              | 300        | 12000   | https://bom.so/knexmk
+| CAN0002    | Drink  | Pepsi                  | 250        | 12000   | https://bom.so/QoXgjw
+| BOT0001    | Drink  | Zero Degrees Green Tea | 100        | 14000   | https://bom.so/ym49LD
+| BOT0002    | Drink  | Sting Red              | 100        | 12000   | https://bom.so/UoevJq
+| MIL0001    | Drink  | Dalat Milk             | 100        | 10000   | https://bom.so/ZLZ4Fe
+| MIL0002    | Drink  | Vinamilk               | 150        | 8000    | https://bom.so/heHCe8
+| ACO0001    | Drink  | Soju Green Grape       | 120        | 70000   | https://bom.so/mXI82Y
+| ACO0002    | Drink  | Soju Classic           | 120        | 70000   | https://bom.so/iVz5Cb
+| COF0001    | Drink  | Milk Coffee            | 90         | 20000   | https://bom.so/qyH5Vq
+| COF0002    | Drink  | Black Coffee           | 90         | 15000   | https://bom.so/OXy7tY
+| MTE0001    | Drink  | Bubble Milk Tea        | 80         | 25000   | https://bom.so/LCsBmI
+| MTE0002    | Drink  | Matcha Milk Tea        | 80         | 30000   | https://bom.so/qQdYp0
+| TEA0001    | Drink  | Peach Tea              | 60         | 25000   | https://bom.so/2XAeLS
+| TEA0002    | Drink  | Lemon Tea              | 70         | 20000   | https://bom.so/P6e6ks
+| TEA0003    | Drink  | Lychee Tea             | 60         | 25000   | https://bom.so/eOPBpB
+| JUI0001    | Drink  | Apple Juice            | 90         | 65000   | https://bom.so/K2YuDM
+| JUI0002    | Drink  | Orange Juice           | 100        | 65000   | https://bom.so/aSRIuq
+| ICE0001    | Drink  | Ice Cup                | 20         | 5000    | https://bom.so/df191o
+| KOR0003    | Food   | Ice Cream              | 1000       | 10000   | https://bom.so/14SCpA
