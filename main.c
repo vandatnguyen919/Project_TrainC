@@ -89,8 +89,7 @@ void dataCleaning() {
                 if (k % 2 == 0 || (k>4 && k%2 != 0)) {
                     strcpy(tmp[i], data[j]);
                     i++;
-                }
-                    
+                }                   
             }
             if (j==count){
                 break;
@@ -162,53 +161,60 @@ void checkLogin(Account* account, int num_account, int* roleCheck, int* foundInd
 }
 
 void updateInforAccount(Account *account, int num_account) {
-    char    updateID,
+    char    updateID[LL],
             newPassword[LL],
             newPhoneNumber[LL];
     int     findIndex = 0;
-    
+    UI:
     do {
-        printf("What ID do you want to update information?");
-        gets(updateID);
+        printf("What ID do you want to update information? ");
+        scanf("%s", &updateID);
         for (int i = 1; i <=num_account; i++) {
             if (strcmp(account[i].id, updateID) == 0) {
                 findIndex = i;
-                printf("ID Found!!!");
+                printf("ID Found! ");
                 break;
             }
         }
     } while (findIndex == 0);
-
+    fflush(stdin);
     printf("What do you want to update?\n");
-    printf("1. Update Password");
-    printf("2. Update Phone Numberl");
-    printf("3. Exit");
-
+    printf("1. Update Password\n");
+    printf("2. Update Phone Number\n");
+    printf("3. Exit\n");
+    printf("Input your selection: ");
     int choice;
+    scanf("%d", &choice);
     switch(choice) {
         case 1:
-            PW:
                 printf("Input your new password: ");
-                gets(newPassword);
-                if (strcmp(account[findIndex].password, newPassword) != NULL) {
+                scanf("%s", &newPassword);
+                if (strcmp(account[findIndex].password, newPassword) != 0) {
                     strcpy(account[findIndex].password, newPassword);
                     main();
                 } else {
                     printf("New password must be different from the old one!\n");
-                    goto PW;
                 }
+            break;
         case 2:
-            printf("Update Phone Numberl");
+                printf("Update Phone Numberl");
+                scanf("%s", &newPhoneNumber);
+                if (strcmp(account[findIndex].phone_number, newPhoneNumber) != 0) {
+                    strcpy(account[findIndex].phone_number, newPhoneNumber);
+                    main();
+                } else {
+                    printf("New password must be different from the old one!\n");
+                }
+            break;
         default:
-            exit(0);
-
+            goto UI;
     }
     
 
 }
 
 
-void homepageMenu() {
+void homepageMenu(Account *account, int num_account) {
     int choice;
     printf("1. Show your information\n");
     printf("2. Edit your information\n");
@@ -217,7 +223,9 @@ void homepageMenu() {
     scanf("%d",&choice);
     switch(choice) {
         case 1:
+
         case 2:
+            updateInforAccount(account, num_account);
         case 3:
 
     }
@@ -244,10 +252,13 @@ int main() {
     switch(choice) {
         case 1:
             checkLogin(account, num_account, &roleCheck, &foundIndex);
+            break;
         default:
             exit(0);
     }
-    
+    if (roleCheck != 0) {
+        homepageMenu(account, num_account);
+    }
     
     return 0;
 };
