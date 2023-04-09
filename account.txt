@@ -1,9 +1,9 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| ID        | Username            | Password            | Full Name           | Gender    | DOB                 | Position  | Phone Number        | Profile Image (Source)
+| STT   | ID        | Username            | Password            | Full Name           | Gender    | DOB                 | Position  | Phone Number        | Profile Image (Source)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| MAN0001   | trung               | 2                   | John                | Male      | 2000                | Manager   | 1234567890          | profile1.jpg        
-| STA0001   | user1               | 2123214             | Alan                | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
-| MAN0002   | sdfdsffds           | 2121                | John                | Female    | 2006                | Staff     | 9999999999          | profile5.jpg        
-| MAN0001   | user1               | 99999               | Alan                | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
-| STA0002   | sdfdsffds           | 2121                | John                | Female    | 2006                | Staff     | 9999999999          | profile5.jpg        
+| 1     | MAN0001   | trung               | 8888                | John                | Male      | 2000                | Manager   | 113114115           | profile1.jpg        
+| 2     | STA0001   | user1               | 2123214             | Alan                | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
+| 3     | MAN0002   | sdfdsffds           | 2121                | John                | Female    | 2006                | Staff     | 9999999999          | profile5.jpg        
+| 4     | MAN0003   | user1               | 99999               | Alan                | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
+| 5     | STA0002   | sdfdsffds           | 2121                | John                | Female    | 2006                | Staff     | 9999999999          | profile5.jpg        
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
