@@ -2,7 +2,7 @@
 | No    | ID         | Type                 | Name                           | Quantity | Import Price    | Export Price    | Product Image (Source)                             
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | 1     | KOR0001    | Food                 | Kimbap                         | 60       | 20000           | 25000           | https://bom.so/4nsa3M                              
-| 2     | KOR0002    | Food                 | Tokbokki                       | 35       | 20000           | 25000           | https://bom.so/gRgrMk                              
+| 2     | KOR0002    | Food                 | Tokbokki                       | 40       | 20000           | 25000           | https://bom.so/gRgrMk                              
 | 3     | PIZ0001    | Food                 | Pizza Seafood                  | 150      | 30000           | 35000           | https://bom.so/ibWk4q                              
 | 4     | SAL0001    | Food                 | Salad                          | 75       | 20000           | 25000           | https://bom.so/ZHgkss                              
 | 5     | SAW0001    | Food                 | Sandwich Jambon                | 50       | 20000           | 25000           | https://bom.so/1HpRSf                              
@@ -39,5 +39,6 @@
 | 36    | TEA0003    | Drink                | Lychee Tea                     | 60       | 18000           | 24000           | https://bom.so/eOPBpB                              
 | 37    | JUI0001    | Drink                | Apple Juice                    | 90       | 55000           | 65000           | https://bom.so/K2YuDM                              
 | 38    | JUI0002    | Drink                | Orange Juice                   | 100      | 53000           | 65000           | https://bom.so/aSRIuq                              
-| 39    | ICE0001    | Drink                | Ice Cup                        | 20       | 1000            | 5000            | https://bom.so/df191o                              
+| 39    | ICE0001    | Drink                | Ice Cup                        | 30       | 1000            | 7000            | https://bom.so/df191o                              
+| 40    | ICE0002    | Food                 | Kem Bo                         | 100      | 10000           | 15000           | http                                               
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
