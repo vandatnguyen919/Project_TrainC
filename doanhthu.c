@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+// khúc merge này là riêng, không trong phần tính doanh thu theo ngày
 void mergeFiles(char* import_file, char* export_file, char* merged_file) {
     FILE* f_import = fopen(import_file, "r");
     FILE* f_export = fopen(export_file, "r");
