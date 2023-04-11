@@ -34,8 +34,8 @@ void mergeFiles(char* import_file, char* export_file, char* merged_file) {
     fclose(f_merged);
 }
 void calculateTotalRevenueByDate(int day, int month, int year) {
-    float  total_import_money_by_date[32] = {0};
-    float total_export_money_by_date[32] = {0};
+    int total_import_money_by_date[32] = {0};
+    int total_export_money_by_date[32] = {0};
     FILE* import_fp = fopen("import.txt", "r");
     if (import_fp == NULL) {
         printf("Cannot open file %s\n", "import.txt");
@@ -63,11 +63,10 @@ void calculateTotalRevenueByDate(int day, int month, int year) {
     }
 
     while (fgets(line, sizeof(line), import_fp) != NULL) {
-        int no, total_qty, imp_qty;
-		float total_money;
+        int no, total_qty, imp_qty, total_money;
         char id[11], iprice[11], import_time[20];
 
-        if (sscanf(line, "| %d | %10s | %18d | %11s | %19d | %21f | %[^\n]", &no, id, &total_qty, iprice, &imp_qty, &total_money, import_time) == 7) {
+        if (sscanf(line, "| %d | %10s | %18d | %11s | %19d | %21d | %[^\n]", &no, id, &total_qty, iprice, &imp_qty, &total_money, import_time) == 7) {
             int day_imp, month_imp, year_imp;
             if (sscanf(import_time, "%d/%d/%d", &day_imp, &month_imp, &year_imp) == 3) {
                 if (day_imp >= 1 && day_imp <= 31 && month_imp == month && year_imp == year) {
@@ -78,11 +77,10 @@ void calculateTotalRevenueByDate(int day, int month, int year) {
     }
 
     while (fgets(line, sizeof(line), export_fp) != NULL) {
-        int no, total_qty, exp_qty;
-		float total_money;
+        int no, total_qty, exp_qty, total_money;
         char id[11], eprice[11], export_time[20];
 
-        if (sscanf(line, "| %d | %10s | %18d | %11s | %19d | %21f | %[^\n]", &no, id, &total_qty, eprice, &exp_qty, &total_money, export_time) == 7) {
+        if (sscanf(line, "| %d | %10s | %18d | %11s | %19d | %21d | %[^\n]", &no, id, &total_qty, eprice, &exp_qty, &total_money, export_time) == 7) {
             int day_exp, month_exp, year_exp;
             if (sscanf(export_time, "%d/%d/%d", &day_exp, &month_exp, &year_exp) == 3) {
                 if (day_exp >= 1 && day_exp <= 31 && month_exp == month && year_exp == year) {
@@ -99,7 +97,7 @@ void calculateTotalRevenueByDate(int day, int month, int year) {
         fclose(export_fp);
         return;
     }
-	fprintf(income_fp, "| %02d/%02d/%04d           | %-20.0f | %-20.0f | %-20.0f\n", day, month, year, total_import_money_by_date[day], total_export_money_by_date[day], (total_export_money_by_date[day] - total_import_money_by_date[day]));
+	fprintf(income_fp, "| %02d/%02d/%04d           | %-20d | %-20d | %-20d\n", day, month, year, total_import_money_by_date[day], total_export_money_by_date[day], (total_export_money_by_date[day] - total_import_money_by_date[day]));
 	fclose(import_fp);
 	fclose(export_fp);
 	fclose(income_fp);
