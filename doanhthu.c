@@ -1,38 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// khúc merge này là riêng, không trong phần tính doanh thu theo ngày
-void mergeFiles(char* import_file, char* export_file, char* merged_file) {
-    FILE* f_import = fopen(import_file, "r");
-    FILE* f_export = fopen(export_file, "r");
-    FILE* f_merged = fopen(merged_file, "w");
 
-    if (f_import == NULL || f_export == NULL || f_merged == NULL) {
-        printf("Failed to open file(s).\n");
-        return;
-    }
-
-    char line[1024];
-
-    // Copy the header line of import file
-    if (fgets(line, sizeof(line), f_import) != NULL) {
-        fputs(line, f_merged);
-    }
-
-    // Copy the content of import file
-    while (fgets(line, sizeof(line), f_import) != NULL) {
-        fputs(line, f_merged);
-    }
-	
-    // Copy the content of export file
-    while (fgets(line, sizeof(line), f_export) != NULL) {
-        fputs(line, f_merged);
-    }
-
-    fclose(f_import);
-    fclose(f_export);
-    fclose(f_merged);
-}
 void calculateTotalRevenueByDate(int day, int month, int year) {
     int total_import_money_by_date[32] = {0};
     int total_export_money_by_date[32] = {0};
@@ -50,13 +19,11 @@ void calculateTotalRevenueByDate(int day, int month, int year) {
 
     char line[1024];
     if (fgets(line, sizeof(line), import_fp) == NULL) {
-        printf("Invalid file format.\n");
         fclose(import_fp);
         fclose(export_fp);
         return;
     }
     if (fgets(line, sizeof(line), export_fp) == NULL) {
-        printf("Invalid file format.\n");
         fclose(import_fp);
         fclose(export_fp);
         return;
@@ -116,13 +83,30 @@ int getDaysInMonth(int month, int year) {
     return days;
 }
 
+void displayIncomeData() {
+    FILE* income_fp = fopen("income.txt", "r");
+    if (income_fp == NULL) {
+        printf("Cannot open file %s\n", "income.txt");
+        return;
+    }
+    char line[1024];
+    int i; 
+     for (i = 0; i < 3; i++) {
+        if (fgets(line, sizeof(line), income_fp) == NULL) {
+            break;
+        }
+    }
+    while (fgets(line, sizeof(line), income_fp) != NULL) {
+        printf("%s", line);
+    }
+   
+    fclose(income_fp);
+}
 
 int main() {
     char* import_file = "import.txt";
     char* export_file = "export.txt";
-    char* merged_file = "import_export.txt";
 	
-    mergeFiles(import_file, export_file, merged_file);
     int start_day;int start_month;int start_year;
 	printf ("Enter start date (day(dd) month(mm) year(yy)): ");
 	scanf ("%d %d %d", &start_day, &start_month, &start_year); 
@@ -141,9 +125,8 @@ int main() {
 	        }
 	    }
 	}
-	printf ("Updated!");
-
-
+	printf ("Updated!\n");
+	displayIncomeData();
     return 0;
 }
 
