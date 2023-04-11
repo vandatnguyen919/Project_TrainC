@@ -99,7 +99,7 @@ void calculateTotalRevenueByDate(int day, int month, int year) {
         fclose(export_fp);
         return;
     }
-	fprintf(income_fp, "| %02d/%02d/%04d           | %-20d | %-20.0f | %-20.0f\n", day, month, year, total_import_money_by_date[day], total_export_money_by_date[day], (total_export_money_by_date[day] - total_import_money_by_date[day]));
+	fprintf(income_fp, "| %02d/%02d/%04d           | %-20.0f | %-20.0f | %-20.0f\n", day, month, year, total_import_money_by_date[day], total_export_money_by_date[day], (total_export_money_by_date[day] - total_import_money_by_date[day]));
 	fclose(import_fp);
 	fclose(export_fp);
 	fclose(income_fp);
