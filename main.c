@@ -63,7 +63,7 @@ void writeToAccountFile(Account* account, int num_account) {
     }
     
     fprintf(fOut, "\n| %-6s| %-10s| %-20s| %-20s| %-20s| %-10s| %-20s| %-10s| %-20s| %-20s\n",
-        "STT", "ID", "Userna+me", "Password",
+        "STT", "ID", "Username", "Password",
         "Full Name", "Gender", "DOB", 
         "Position", "Phone Number", "Profile Image (Source)");
     for(int t = 0; t <= 200; t++) {
@@ -298,9 +298,8 @@ void deleteAccount(Account* account, int* num_account, int roleCheck, int foundI
             } while (foundID != 1);
             --(*num_account);
             printf("Delete Successfully!\n");
-            writeToAccountFile(account, num_account);
         } else if (strcmp(checkAgain, "exit") == 0) {
-            writeToAccountFile(account, num_account);
+            printf("Get back to menu page\n");
         }
         
     } else {
@@ -326,7 +325,7 @@ void homepageMenu(Account *account, int num_account, int roleCheck, int foundInd
     int choice;
     if (roleCheck == 1) {
         printf("\n1. Add new account\n");
-        printf("2. Delete your account\n");
+        printf("2. Delete an account\n");
         printf("3. Update your information\n");
         printf("Input your choice: ");
         scanf("%d", &choice);

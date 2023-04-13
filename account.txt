@@ -1,10 +1,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| STT   | ID        | Userna+me           | Password            | Full Name           | Gender    | DOB                 | Position  | Phone Number        | Profile Image (Source)
+| STT   | ID        | Username            | Password            | Full Name           | Gender    | DOB                 | Position  | Phone Number        | Profile Image (Source)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| 1     | MAN0001   | trung               | 8888                | John Cena Haland    | Male      | 2000                | Manager   | 113114115           | profile1.jpg        
-| 2     | STA0001   | user1               | 2123214             | Alan Walker         | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
-| 3     | trt       | dfdf                | df                  | df                  | df        | d                   | fd        | 090909              | profile3.jpg        
-| 4     | STAFF0002 | staff02             | 1                   | Bui Thinh           | Male      | 1999                | Staff     | 3453453456          | profile4.jpg        
-| 5     | STAFF0003 | superstaff3         | 1                   | Yahoo               | Female    | 1998                | Staff     | 09090909            | profile5.jpg        
-| 6     | MAN0002   | trungle             | 123456              | Le Quang Trung      | Male      | 2004                | Manager   | 0                   | 0                   
+| 1     | MAN0001   | admin               | 1                   | Main Manager        | Male      | 2000                | Manager   | 999999999           | profile1.jpg        
+| 2     | STA0001   | hoangnguyen         | 123456              | Nguyen Huy Hoang    | Male      | 2004                | Staff     | 8888888888          | profile2.jpg        
+| 3     | MAN0002   | maixuan             | 123456              | Xuan Mai            | Female    | 2000                | Manager   | 0909090909          | profile3.jpg        
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
