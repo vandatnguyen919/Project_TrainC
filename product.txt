@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| No    | ID         | Type                 | Name                           | Quantity | Import Price    | Export Price    | Product Image (Source)                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 1     | BAN00001   | Food                 | Banh Mi                        | 989      | 15000           | 20000           | E:\msys64\home\HIEU\image\banh_mi.jpg              
+| 2     | BAN00002   | Food                 | Meatball Banh Mi               | 994      | 15000           | 20000           | E:\msys64\home\HIEU\image\meatball_banh_mi.jpg     
+| 3     | BAN00003   | Food                 | Chicken Banh Mi                | 990      | 15000           | 20000           | E:\msys64\home\HIEU\image\chicken_bread.jpg        
+| 4     | BAN00004   | Food                 | Banh Gio                       | 995      | 10000           | 15000           | E:\msys64\home\HIEU\image\banh_gio.jpg             
+| 5     | BAN00005   | Food                 | Meat Bao                       | 990      | 8000            | 15000           | E:\msys64\home\HIEU\image\meat_bao.jpg             
+| 6     | BAN00006   | Food                 | BBQ Bao                        | 995      | 10000           | 17000           | E:\msys64\home\HIEU\image\bbq_bao.jpg              
+| 7     | SAN00001   | Food                 | Egg Sandwich                   | 1000     | 10000           | 20000           | E:\msys64\home\HIEU\image\sandwich_egg.jpg         
+| 8     | SAN00002   | Food                 | Jambon Sandwich                | 995      | 10000           | 20000           | E:\msys64\home\HIEU\image\sandwich_jambon.jpg      
+| 9     | COC00001   | Drink                | Coca Cola                      | 994      | 5000            | 10000           | E:\msys64\home\HIEU\image\coca_cola.jpeg           
+| 10    | LAV00001   | Drink                | Lavie                          | 998      | 3000            | 5000            | E:\msys64\home\HIEU\image\lavie.jpeg               
+| 11    | SOJ00001   | Drink                | Classic Soju                   | 1000     | 15000           | 25000           | E:\msys64\home\HIEU\image\soju_classic.jpeg        
+| 12    | SOJ00002   | Drink                | Green Grape Soju               | 999      | 15000           | 25000           | E:\msys64\home\HIEU\image\soju_jinro_green_grape.jpeg 
+| 13    | MIL00002   | Drink                | Vinamilk                       | 991      | 5000            | 8000            | E:\msys64\home\HIEU\image\vinamlik.jpg             
+| 14    | MIL00001   | Drink                | Dalat Milk                     | 998      | 5000            | 8000            | E:\msys64\home\HIEU\image\dalat_milk.jpeg          
+| 15    | PEP00001   | Drink                | Pepsi                          | 1000     | 5000            | 8000            | E:\msys64\home\HIEU\image\pepsi.jpg                
+| 16    | SAL00001   | Food                 | Salad                          | 990      | 15000           | 20000           | E:\msys64\home\HIEU\image\salad.jpg                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,9 +1,19 @@
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| STT   | ID        | Username            | Password            | Full Name           | Gender    | DOB                 | Position  | Phone Number        | Profile Image (Source)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| 1     | MAN0001   | trung               | 8888                | John                | Male      | 2000                | Manager   | 113114115           | profile1.jpg        
-| 2     | STA0001   | user1               | 2123214             | Alan                | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
-| 3     | MAN0002   | sdfdsffds           | 2121                | John                | Female    | 2006                | Staff     | 9999999999          | profile5.jpg        
-| 4     | MAN0003   | user1               | 99999               | Alan                | Male      | 2004                | Manager   | 0975659099          | profile2.jpg        
-| 5     | STA0002   | sdfdsffds           | 2121                | John                | Female    | 2006                | Staff     | 9999999999          | profile5.jpg        
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| No    | ID         | Username             | Password             | Full Name                      | Gender   | DOB      | Position   | Phone Number    | Profile Image (Source)                            
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 1     | MAN00001   | datnguyen            | 123456               | Nguyen Van Dat                 | Male     | 2004     | Manager    | 0368878548      | NULL                                              
+| 2     | MAN00002   | hoavo                | 123456               | Vo Thi Mai Hoa                 | Female   | 2004     | Manager    | 0987654321      | NULL                                              
+| 3     | MAN00003   | trungle              | 123456               | Le Quang Trung                 | Male     | 2004     | Manager    | 0987654321      | NULL                                              
+| 4     | MAN00004   | daopham              | 123456               | Pham Thi Anh Dao               | Female   | 2004     | Manager    | 0987654321      | NULL                                              
+| 5     | STA00001   | datnguyen            | 123456               | Nguyen Van Dat                 | Male     | 2004     | Staff      | 0987654321      | NULL                                              
+| 6     | STA00002   | hoavo                | 123456               | Vo Thi Mai Hoa                 | Female   | 2004     | Staff      | 0987654321      | NULL                                              
+| 7     | STA00003   | trungle              | 123456               | Le Quang Trung                 | Male     | 2004     | Staff      | 0987654321      | NULL                                              
+| 8     | STA00004   | daopham              | 123456               | Pham Thi Anh Dao               | Female   | 2004     | Staff      | 0987654321      | NULL                                              
+| 9     | STA00005   | coolcolin            | 123456               | Colin Cool                     | Male     | 2004     | Staff      | 0987654321      | NULL                                              
+| 10    | STA00006   | techadam             | 123456               | Adam Tech                      | Male     | 2004     | Staff      | 0987654321      | NULL                                              
+| 11    | STA00007   | browngill            | 123456               | Gill Brown                     | Female   | 2004     | Staff      | 0987654321      | NULL                                              
+| 12    | STA00008   | pushypercy           | 123456               | Percy Pushy                    | Female   | 2004     | Staff      | 0987654321      | NULL                                              
+| 13    | STA00009   | youngjack            | 123456               | Jack Young                     | Male     | 2004     | Staff      | 0987654321      | NULL                                              
+| 14    | STA00010   | oakenmaya            | 123456               | Maya Oaken                     | Female   | 2004     | Staff      | 0987654321      | NULL                                              
+| 15    | STA00011   | sloanesarah          | 123456               | Sarah Sloane                   | Female   | 2004     | Staff      | 0987654321      | NULL                                              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
